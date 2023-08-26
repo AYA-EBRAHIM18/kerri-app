@@ -14,10 +14,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#nav">
-    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="nav">
+  <body>
+    <div
+      class="loading position-fixed top-0 start-0 end-0 bottom-0 bg-secondary justify-content-center align-items-center"
+    >
+      <i class="fa-solid fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
       <div class="container">
-        <a class="navbar-brand fs-2 fw-bold" href="#">Kerri</a>
+        <a class="navbar-brand fs-2 fw-bold text-white" href="#">Kerri</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -865,16 +870,25 @@
     <!-- //////////////////////////// -->
     <!-- Fixed boxes -->
     <div
-      class="scroll position-fixed d-flex align-items-center justify-content-center rounded-1"
+      class="scroll-up position-fixed align-items-center justify-content-center rounded-1"
     >
       <a href="#nav" class="text-white"
         ><i class="fa-solid fa-chevron-up"></i
       ></a>
     </div>
-    <div
-      class="spinner bg-dark d-flex justify-content-center align-items-center position-fixed rounded-2"
-    >
-      <i class="fa-solid fa-gear text-white fa-spin"></i>
+
+    <div class="coloring-box">
+      <h6>Choose a color:</h6>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <div
+        class="spinner bg-dark d-flex justify-content-center align-items-center position-absolute top-0 start-100 rounded-2"
+      >
+        <i class="fa-solid fa-gear text-white fa-spin"></i>
+      </div>
     </div>
     <div class="up-down border-2 rounded-pill position-absolute">
       <div class="inner border-1"></div>
@@ -884,5 +898,7 @@
       src="https://kit.fontawesome.com/201e436313.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
